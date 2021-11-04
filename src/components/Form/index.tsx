@@ -67,7 +67,7 @@ const FeedbackForm = () => {
     return (
         <Formik initialValues={initialValues} onSubmit={handleSubmit} validationSchema={validationSchema}>
             {
-                ({values, isSubmitting, setFieldValue}) => (
+                ({values, isSubmitting}) => (
                     <Form
                         className={cn({'form_disabled': isSubmitting})}
                         onChange={() => setNetworkError(false)}>
